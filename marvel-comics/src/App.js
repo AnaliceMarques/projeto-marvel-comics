@@ -1,9 +1,12 @@
+import { GlobalContextProvider } from "./context/GlobalContext";
 import ComicsListPage from "./pages/ComicsListPage";
 
 function App() {
   return (
     <div>
-      <ComicsListPage />
+      <GlobalContextProvider>
+        <ComicsListPage />
+      </GlobalContextProvider>
     </div>
   );
 }
