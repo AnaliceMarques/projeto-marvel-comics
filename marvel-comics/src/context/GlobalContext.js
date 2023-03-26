@@ -11,7 +11,6 @@ export function GlobalContextProvider({ children }) {
   const getComics = async () => {
     try {
       const res = await api.get("/comics");
-      console.log(res.data.data.results);
       setComicsList(res.data.data.results);
       setIsLoaded(true);
     } catch (err) {

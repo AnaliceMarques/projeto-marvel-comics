@@ -1,7 +1,14 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Modal } from "./Modal";
 
 export const ComicCard = ({ comic }) => {
+  const navigate = useNavigate();
+
+  const goToMapPage = () => {
+    navigate("/map");
+  };
+
   const [showModal, setShowModal] = useState(false);
 
   const handleOnClose = () => {
@@ -20,14 +27,17 @@ export const ComicCard = ({ comic }) => {
           {comic.title}
         </strong>
       </div>
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly mt-2">
         <button
           onClick={() => setShowModal(true)}
           className="w-20 p-1 text-[#FEFEFE]  bg-[#EC1D24] hover:bg-[#9F0013] "
         >
           Details
         </button>
-        <button className="w-20 p-1 text-[#FEFEFE]  bg-[#EC1D24] hover:bg-[#9F0013]">
+        <button
+          onClick={goToMapPage}
+          className="w-20 p-1 text-[#FEFEFE]  bg-[#EC1D24] hover:bg-[#9F0013]"
+        >
           Send
         </button>
       </div>
