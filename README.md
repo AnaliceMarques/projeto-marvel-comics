@@ -14,10 +14,6 @@ O Projeto Marvel Comics é uma Single Page Application para uma consulta de quad
 - [x] No Header da página Map tem um botão para voltar para Home;
 - [x] Caso o usuário digite algum endereço inválido será renderizada a página de erro, informando "Page Not Found!";
 
-## **Link de Acesso**
-
-- Deploy do projeto realizado no surge:
-
 ## **Tecnologias e Bibliotecas Utilizadas**
 
 1. [React](https://pt-br.reactjs.org/) (React.JS, React Context, Estado Global)
