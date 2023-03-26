@@ -1,7 +1,8 @@
 import axios from "axios";
 import md5 from "md5";
+import { keyPrivateMarvel } from "../keys/Keys";
 
-const privateKey = "06a03a64974e56f750884a64246d78dd51cbf9db";
+const privateKey = keyPrivateMarvel;
 const publicKey = "e0e6819fac199485f5fd579b453e0d09";
 
 const ts = +new Date();

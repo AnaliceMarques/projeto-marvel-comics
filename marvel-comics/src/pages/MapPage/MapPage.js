@@ -1,11 +1,12 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import { keyGoogleMap } from "../../keys/Keys";
 import "./MapPage.css";
 
 const MapPage = () => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyD5oQsdkjWHgt4DjX3dqbM7_l7CG70YfWY",
+    googleMapsApiKey: keyGoogleMap,
   });
 
   const position = {
